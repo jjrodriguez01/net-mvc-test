@@ -13,15 +13,15 @@
 
 <form asp-action="CreateAuthor">
     <div class="form-group">
-        <label asp-for="FullName">Full Name</label>
+        <label asp-for="FullName">Full Name <span class="text-danger">*</span></label>
         <input asp-for="FullName" class="form-control" />
     </div>
     <div class="form-group">
-        <label asp-for="BirthCity">Birth City</label>
+        <label asp-for="BirthCity">Birth City <span class="text-danger">*</span></label>
         <input asp-for="BirthCity" class="form-control" />
     </div>
     <div class="form-group">
-        <label asp-for="DateOfBirth">Date of Birth</label>
+        <label asp-for="DateOfBirth">Date of Birth <span class="text-danger">*</span></label>
         <input asp-for="DateOfBirth" class="form-control" />
     </div>
     <button type="submit" class="btn btn-primary">Create</button>
